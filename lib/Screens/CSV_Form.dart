@@ -220,7 +220,7 @@ END:VCARD
                                   if (value == null || value.isEmpty) {
                                     return 'Required';
                                   }
-                                  if (value.length <= 10) {
+                                  if (value.length <= 9) {
                                     return 'Mobile number Must Be 10 digits';
                                   }
                                   if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
@@ -267,7 +267,7 @@ END:VCARD
                                   if (value == null || value.isEmpty) {
                                     return null;
                                   }
-                                  if (value.length <= 10) {
+                                  if (value.length <= 9) {
                                     return 'Mobile number Must Be 10 digits';
                                   }
                                   if (!RegExp(r'^[0-9]+$').hasMatch(value)) {
